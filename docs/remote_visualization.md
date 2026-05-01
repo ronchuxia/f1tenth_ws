@@ -34,3 +34,4 @@ This allows us to use RViz 2 on our laptop to visualize the code running on the 
     ```
 
 3. Do the same on the jetson.
+4. Restart both your laptop and the jetson.
