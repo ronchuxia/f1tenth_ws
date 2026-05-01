@@ -1,0 +1,52 @@
+race3:
+  ros__parameters:
+    # general
+    waypoints_file: /home/xiachu/f1tenth_ws/waypoints/race3.csv
+    sim: true
+    vis: true
+    vis_traker: true
+    vis_obs: true
+    wheelbase: 0.3302
+    laser_offset: 0.27
+    max_steering_angle: 0.38
+    scan_self_filter_range: 0.1
+    enable_pose_prediction: false # dead reckoning
+
+    # pure pursuit
+    max_speed: 6.0
+    mu: 0.28
+    l_min: 0.75
+    l_max: 1.25
+    l_k: 0.1
+    l_eps: 0.5
+    n_ahead: 20
+    p: 1.0
+    use_waypoint_speed_profile: true
+
+    # state machine
+    reacquire_frames: 3
+    avoidance_frames: 3
+
+    # avoidance trigger: always | never | waypoint_radius
+    avoidance_trigger: waypoint_radius
+    trigger_wp_radius: 0.15
+    trigger_wp_lookahead: 3.0
+    # radius 0.2,, lookahead 3.0
+    # radius 0.2,, lookahead 5.0
+
+    # frenet
+    frenet_car_width: 0.4
+    frenet_lookahead: 1.5
+    frenet_num_offsets: 17
+    frenet_offset_spacing: 0.10
+    frenet_num_samples: 10
+    frenet_w_offset: 2.0
+    frenet_w_jerk: 0.01
+    frenet_w_clear: 0.5
+    # frenet pure pursuit
+    frenet_max_speed: 3.0
+    frenet_mu: 0.3
+    frenet_p: 1.5
+    frenet_pp_lookahead: 0.8
+    # lookahead 2.0, num_offsets 20, spacing 0.1
+    # lookahead 3.0, num_offsets 40, spacing 0.1

@@ -1,0 +1,1 @@
+ros2 run topic_tools throttle messages /ego_racecar/odom 30 /ego_racecar/odom_throttle
