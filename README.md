@@ -1,6 +1,6 @@
 # F1TENTH Workspace
 
-ROS 2 workspace for F1TENTH racing, simulation, waypoint logging, remote RViz visualization, and race controllers.
+ROS 2 workspace for the races and final project of team 9 of 16-663 F1TENTH Autonomous Racing at CMU, 2026 spring. Including reactive method, waypoint following, dynamic obstacle avoidance, waypoint logger, odometry tuner and anti-skid system.
 
 ## Contents
 
